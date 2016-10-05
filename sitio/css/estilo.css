@@ -3,6 +3,15 @@
     margin: 0;
     padding: 0;
 }
+
+section{
+    min-height: 400px;
+}
+
+a{
+    font-weight: bold;
+}
+
 /* ESTILO GENERAL */
 
 header.hero{
@@ -44,6 +53,114 @@ header.hero a{
 header.hero a:hover{
     background: #fff;
     color:#123A52;
+}
+
+
+
+
+
+
+/* CLASES REUTILIZABLES */
+.caract{
+    text-align: center;
+    color:#666;
+    display: block;
+    text-decoration: none;
+}
+.caract .fa{
+    font-size: 3.6em;
+    color:#fff;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    border: 5px solid #a23e92;
+    line-height: 2.1em;
+    border-radius: 50%;
+    background: #123A52;
+}
+.caract .titulo{
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+}
+.caract .descripcion{
+    color:#888;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+/* --- CARACTERISTICAS --- */
+.caracteristicas{
+    padding: 80px 0;
+    overflow: hidden;
+}
+.caracteristicas .caract{
+    width: 25%;
+    float:left;
+}
+
+/* --- BOTON --- */
+
+section.boton{
+    background:#000;
+    padding: 80px 0;
+}
+
+section.boton .caract .titulo{
+    color:#fff;
+    font-size: 2em;
+}
+
+section.boton .caract .fa{
+    background: #fff;
+    color:#a23e92;
+}
+
+
+
+
+/* RESPONSIVE : MEDIA QUERIES */
+/* ESTADO */
+
+/*TABLETS */
+@media (max-width: 800px){
+    
+    header.hero{
+        background:#000;
+    }
+    header.hero h1{
+        font-size: 2em;
+    }
+    header.hero h1 .fa{
+        font-size: 2em;
+    }
+    header.hero a{
+        background:#fff;
+        color:#000;
+    }
+    .caracteristicas .caract{
+        width: 50%;
+    }
+}
+
+/* MOVILES */
+@media (max-width:600px){
+    .caracteristicas .caract{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+a{
+    
+}
+
+section{
+    /* YO CREE */
 }
 
 
